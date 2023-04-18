@@ -10,6 +10,8 @@
 当リポジトリをCloneした後、下記コマンドを実行してください。
 
 ```
+$ git clone https://github.com/h-takamori/my-tweet-analyzer.git
+$ cd my-tweet-analyzer
 $ docker compose build
 $ docker run -v $PWD/opt:/root/opt -w /root/opt -it --rm -p 8888:8888 my-tweet-analyzer-python3 jupyter-lab --ip 0.0.0.0 --allow-root -b localhost
 ```
