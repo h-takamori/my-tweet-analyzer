@@ -19,3 +19,5 @@ RUN jupyter notebook --generate-config
 RUN sed -i -e "s/# c.NotebookApp.iopub_data_rate_limit = 1000000/c.NotebookApp.iopub_data_rate_limit = 10000000/" ~/.jupyter/jupyter_notebook_config.py
 RUN python -m pip install pandas
 RUN python -m pip install matplotlib
+RUN python -m pip install ipywidgets
+RUN python -m pip install ipympl
